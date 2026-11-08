@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nando Keers · IT Portfolio</title>
+  <meta name="description" content="CV and projects of Nando Keers: aspiring network & security engineer based in Hilversum.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Language: ?lang=nl in the URL, otherwise the last choice, otherwise English.
+    (function () {
+      var l = new URLSearchParams(location.search).get('lang');
+      try { l = l || localStorage.getItem('lang'); } catch (e) {}
+      if (l === 'nl') document.documentElement.lang = 'nl';
+      try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+<!--
+  HOW TO EDIT
+  Every text exists twice: <span lang="en">…</span> and <span lang="nl">…</span>.
+  Change both. Only the active language is shown.
+-->
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo"><span class="prompt">&gt;</span> nando<span class="dim">.keers</span></a>
+    <nav>
+      <a href="#about"><span lang="en">About</span><span lang="nl">Over mij</span></a>
+      <a href="#skills">Skills</a>
+      <a href="#projects"><span lang="en">Projects</span><span lang="nl">Projecten</span></a>
+      <a href="#experience"><span lang="en">Experience</span><span lang="nl">Ervaring</span></a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="lang-switch mono" role="group" aria-label="Language">
+      <button data-lang="en">EN</button><button data-lang="nl">NL</button>
+    </div>
+    <button id="theme" class="icon-btn" aria-label="Toggle dark mode">◐</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero wrap">
+    <p class="mono kicker">$ whoami</p>
+    <h1>Nando Keers</h1>
+    <p class="lead">
+      <span lang="en"><strong>Cybersecurity student</strong> at HU Amersfoort with years of hands-on troubleshooting as a mechanic.
+        Looking for a traineeship to grow into a network &amp; security engineer.</span>
+      <span lang="nl"><strong>Student Cybersecurity</strong> aan de HU Amersfoort, met jarenlange praktijkervaring in storingen zoeken als monteur.
+        Op zoek naar een traineeship om door te groeien tot netwerk- &amp; security engineer.</span>
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="#projects"><span lang="en">View projects</span><span lang="nl">Bekijk projecten</span></a>
+      <!-- EDIT: put your new (IT-focused) CV in assets/cv.pdf -->
+<!-- <a class="btn" href="assets/cv.pdf" download><span lang="en">Download CV (PDF)</span><span lang="nl">Download cv (PDF)</span></a> -->
+    </div>
+    <ul class="facts mono">
+      <li><span lang="en">location</span><span lang="nl">locatie</span> Hilversum, NL</li>
+      <li><span>status</span> <i class="dot"></i><span lang="en">Open to a traineeship</span><span lang="nl">Beschikbaar voor traineeship</span></li>
+      <li><span lang="en">study</span><span lang="nl">studie</span> AD Cybersecurity · HU</li>
+      <li><span>focus</span> Networking · Security</li>
+    </ul>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="wrap section">
+    <h2><span class="num">01</span><span lang="en">About me</span><span lang="nl">Over mij</span></h2>
+    <div class="about">
+      <div>
+        <!-- EDIT: rewrite in your own words, and add what you've been doing since 2023 -->
+        <div lang="en">
+          <p>I started at a scooter shop when I was young, sweeping floors, and worked my way up to mechanic. Later I became
+            a car mechanic too. Those years taught me how to diagnose a problem step by step: rule things out, test a hypothesis, fix, verify.
+            I've found that same way of thinking is exactly what networking and security need.</p>
+          <p>Next to the workshop I was always the one maintaining the website, the webshop and the social media.
+            After exploring business administration, ICT and media design, and a few years of working and travelling,
+            I found what I want to do: in 2025 I started the Associate Degree in Cybersecurity at HU Amersfoort.
+            I'm working towards CompTIA A+, Network+ and Security+, and I'm looking for a traineeship where I can learn
+            from experienced engineers and work on real customer networks.</p>
+        </div>
+        <div lang="nl">
+          <p>Als jongen begon ik bij een scooterzaak met schoonmaken en groeide ik door tot monteur. Later werd ik ook automonteur.
+            Daar leerde ik problemen stap voor stap te analyseren: dingen uitsluiten, een hypothese testen, oplossen, controleren.
+            Precies die manier van denken is wat netwerken en security vragen.</p>
+          <p>Naast de werkplaats was ik altijd degene die de website, de webshop en de social media bijhield.
+            Na kennis te hebben gemaakt met Bedrijfskunde, ICT en Communicatie &amp; Multimedia Design, en een paar jaar werken en reizen,
+            weet ik wat ik wil: in 2025 ben ik begonnen aan de Associate Degree Cybersecurity aan de HU Amersfoort.
+            Ik werk toe naar CompTIA A+, Network+ en Security+ en zoek een traineeship waarin ik kan leren van ervaren
+            engineers en kan werken aan echte klantnetwerken.</p>
+        </div>
+      </div>
+      <img class="photo" src="assets/photo.jpg" alt="Nando Keers" width="200" height="250">
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="wrap section">
+    <h2><span class="num">02</span>Skills</h2>
+    <!-- EDIT: add IT skills as you learn them (only what you can explain in an interview) -->
+    <div class="grid skills">
+      <div class="card">
+        <h3><span lang="en">Networking &amp; security</span><span lang="nl">Netwerken &amp; security</span></h3>
+        <ul class="tags"><li>IPv4 subnetting</li><li>CIDR / VLSM</li><li>OSI &amp; TCP/IP</li><li>CIA triad</li><li>ExifTool</li><li>OSINT</li><li>GDPR / AVG</li></ul>
+      </div>
+      <div class="card">
+        <h3><span lang="en">Troubleshooting</span><span lang="nl">Storingen oplossen</span></h3>
+        <p class="card-text"><span lang="en">10 years diagnosing and repairing scooters and cars: structured fault finding under time pressure, with customers waiting.</span>
+          <span lang="nl">10 jaar scooters en auto's diagnosticeren en repareren: gestructureerd fouten zoeken onder tijdsdruk, met klanten die wachten.</span></p>
+      </div>
+      <div class="card">
+        <h3><span lang="en">Web &amp; digital</span><span lang="nl">Web &amp; digitaal</span></h3>
+        <ul class="tags"><li>Web design</li><li>HTML / CSS</li><li>Webshop / CMS</li><li>Photoshop</li><li>After Effects</li></ul>
+      </div>
+      <div class="card">
+        <h3><span lang="en">Languages</span><span lang="nl">Talen</span></h3>
+        <p class="card-text"><span lang="en">Dutch (native) · English (fluent)</span><span lang="nl">Nederlands (moedertaal) · Engels (vloeiend)</span></p>
+      </div>
+    </div>
+
+    <h3 class="sub"><span lang="en">Certification path</span><span lang="nl">Certificeringstraject</span></h3>
+    <!-- EDIT: badge class = done / progress / planned -->
+    <ol class="certs">
+      <li><b>CompTIA A+</b><span class="badge planned"><span lang="en">Planned</span><span lang="nl">Gepland</span></span></li>
+      <li><b>CompTIA Network+</b><span class="badge planned"><span lang="en">Planned</span><span lang="nl">Gepland</span></span></li>
+      <li><b>CompTIA Security+</b><span class="badge planned"><span lang="en">Planned</span><span lang="nl">Gepland</span></span></li>
+    </ol>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="wrap section">
+    <h2><span class="num">03</span><span lang="en">Projects</span><span lang="nl">Projecten</span></h2>
+
+    <h3 class="sub"><span lang="en">Cybersecurity studies · HU</span><span lang="nl">Opleiding Cybersecurity · HU</span></h3>
+    <div class="grid projects">
+
+      <!-- EDIT: copy an <article> block for each new project -->
+      <article class="card project">
+        <div class="project-top"><span class="mono type">networking</span><span class="mono year">2025</span></div>
+        <h3><span lang="en">IPv4 network design &amp; subnetting</span><span lang="nl">IPv4-netwerkontwerp &amp; subnetting</span></h3>
+        <p><span lang="en">Designed the addressing plan for a network with four subnets of different sizes, first with fixed-size CIDR blocks
+            and then with VLSM, so no address space is wasted.</span>
+          <span lang="nl">Een adresplan ontworpen voor een netwerk met vier subnets van verschillende grootte, eerst met CIDR-blokken
+            en daarna met VLSM, zodat er geen adresruimte verspild wordt.</span></p>
+        <ul class="points">
+          <li><span lang="en">Calculated host requirements per subnet and chose /26, /27, /28 and /29 masks</span>
+            <span lang="nl">Benodigde hosts per subnet berekend en /26, /27, /28 en /29 maskers gekozen</span></li>
+          <li><span lang="en">Network, gateway and broadcast address for every subnet, without overlap</span>
+            <span lang="nl">Netwerk-, gateway- en broadcastadres per subnet, zonder overlap</span></li>
+          <li><span lang="en">Explained the roles of switches, routers and servers, and the OSI &amp; TCP/IP models</span>
+            <span lang="nl">De rol van switches, routers en servers uitgelegd, en het OSI- &amp; TCP/IP-model</span></li>
+        </ul>
+        <ul class="tags"><li>IPv4</li><li>CIDR</li><li>VLSM</li><li>OSI model</li></ul>
+      </article>
+
+      <article class="card project">
+        <div class="project-top"><span class="mono type">osint / privacy</span><span class="mono year">2025</span></div>
+        <h3><span lang="en">Metadata analysis with ExifTool</span><span lang="nl">Metadata-analyse met ExifTool</span></h3>
+        <p><span lang="en">Investigated what information hides in a photo's metadata, and tested whether WhatsApp really removes it.</span>
+          <span lang="nl">Onderzocht welke informatie er in de metadata van een foto zit, en getest of WhatsApp die echt verwijdert.</span></p>
+        <ul class="points">
+          <li><span lang="en">The original revealed camera and lens model, exposure settings, editing software and timestamps</span>
+            <span lang="nl">Het origineel liet camera- en lensmodel, belichting, bewerkingssoftware en tijdstempels zien</span></li>
+          <li><span lang="en">After sending through WhatsApp, almost all EXIF data was stripped</span>
+            <span lang="nl">Na verzenden via WhatsApp was bijna alle EXIF-data verwijderd</span></li>
+        </ul>
+        <ul class="tags"><li>ExifTool</li><li>OSINT</li><li>Privacy</li></ul>
+      </article>
+
+      <article class="card project">
+        <div class="project-top"><span class="mono type">information security</span><span class="mono year">2025</span></div>
+        <h3><span lang="en">CIA classification · CycloTech case</span><span lang="nl">BIV-classificatie · casus CycloTech</span></h3>
+        <p><span lang="en">Applied the CIA triad (confidentiality, integrity, availability) to a fictional bicycle manufacturer and rated
+            its information on each aspect.</span>
+          <span lang="nl">De BIV-driehoek (beschikbaarheid, integriteit, vertrouwelijkheid) toegepast op een fictieve fietsfabrikant en
+            de informatie per aspect beoordeeld.</span></p>
+        <ul class="points">
+          <li><span lang="en">Rated test results, stock levels, sales transactions, HR files and invoices as high, medium or low</span>
+            <span lang="nl">Testresultaten, voorraad, verkooptransacties, personeelsdossiers en facturen ingedeeld als hoog, middel of laag</span></li>
+          <li><span lang="en">Motivated each rating from the business impact</span>
+            <span lang="nl">Elke inschaling onderbouwd vanuit de impact op het bedrijf</span></li>
+        </ul>
+        <ul class="tags"><li>CIA triad</li><li><span lang="en">Risk classification</span><span lang="nl">Risicoclassificatie</span></li></ul>
+      </article>
+
+      <article class="card project">
+        <div class="project-top"><span class="mono type">ethics &amp; law</span><span class="mono year">2025</span></div>
+        <h3><span lang="en">Code of conduct for ethical hacking</span><span lang="nl">Code of conduct voor ethisch hacken</span></h3>
+        <p><span lang="en">Researched and compared existing codes of conduct, then wrote and signed my own for working in cybersecurity.</span>
+          <span lang="nl">Bestaande codes of conduct onderzocht en vergeleken, en daarna mijn eigen code opgesteld en ondertekend voor werken in cybersecurity.</span></p>
+        <ul class="points">
+          <li><span lang="en">Dutch law: Computer Crime Act, GDPR (AVG) and Copyright Act</span>
+            <span lang="nl">Wetgeving: Wet computercriminaliteit, AVG en Auteurswet</span></li>
+          <li><span lang="en">Only test systems with explicit written permission, and follow responsible disclosure</span>
+            <span lang="nl">Alleen systemen testen met expliciete schriftelijke toestemming, en responsible disclosure volgen</span></li>
+        </ul>
+        <ul class="tags"><li>GDPR / AVG</li><li>Responsible disclosure</li><li><span lang="en">Ethics</span><span lang="nl">Ethiek</span></li></ul>
+      </article>
+    </div>
+
+    <h3 class="sub"><span lang="en">Programming &amp; web</span><span lang="nl">Programmeren &amp; web</span></h3>
+    <div class="grid projects">
+      <article class="card project">
+        <div class="project-top"><span class="mono type">python · HBO-ICT</span><span class="mono year">2022</span></div>
+        <h3><span lang="en">Station feedback &amp; info screens</span><span lang="nl">Stationszuil voor reizigers</span></h3>
+        <p><span lang="en">School project in three Python programs: travellers leave a message at a kiosk, a moderator approves or rejects it,
+            and a station screen shows approved messages with live weather and station facilities.</span>
+          <span lang="nl">Schoolproject in drie Python-programma's: reizigers laten een bericht achter bij een zuil, een moderator keurt het
+            goed of af, en een stationsscherm toont goedgekeurde berichten met actueel weer en stationsfaciliteiten.</span></p>
+        <ul class="points">
+          <li><span lang="en">GUIs built with Tkinter, data stored in PostgreSQL</span>
+            <span lang="nl">Interfaces gebouwd met Tkinter, data opgeslagen in PostgreSQL</span></li>
+          <li><span lang="en">Parameterised SQL queries to prevent SQL injection</span>
+            <span lang="nl">Geparametriseerde SQL-queries tegen SQL-injectie</span></li>
+          <li><span lang="en">Live weather via the OpenWeatherMap REST API</span>
+            <span lang="nl">Actueel weer via de OpenWeatherMap REST API</span></li>
+        </ul>
+        <ul class="tags"><li>Python</li><li>Tkinter</li><li>PostgreSQL</li><li>REST API</li></ul>
+        <div class="links"><a href="https://github.com/nandokeers/ProjectA" target="_blank" rel="noopener">GitHub →</a></div>
+      </article>
+
+      <article class="card project">
+        <div class="project-top"><span class="mono type">web</span><span class="mono year">2026</span></div>
+        <h3><span lang="en">This portfolio website</span><span lang="nl">Deze portfoliowebsite</span></h3>
+        <p><span lang="en">Hand-written HTML and CSS without frameworks: bilingual (EN/NL), responsive, with dark mode, hosted on GitHub Pages.</span>
+          <span lang="nl">Zelf geschreven in HTML en CSS zonder frameworks: tweetalig (EN/NL), responsive, met dark mode, gehost op GitHub Pages.</span></p>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>Git</li><li>GitHub Pages</li></ul>
+        <div class="links"><a href="https://github.com/nandokeers/nandokeers.github.io" target="_blank" rel="noopener">GitHub →</a></div>
+      </article>
+
+      <article class="card project">
+        <div class="project-top"><span class="mono type">web</span><span class="mono year">2022–2023</span></div>
+        <h3><span lang="en">Website improvement · De Sjouwers</span><span lang="nl">Website verbeteren · De Sjouwers</span></h3>
+        <p><span lang="en">Improved the company website and advised on and applied marketing strategies that helped bring in new customers and staff.</span>
+          <span lang="nl">De bedrijfswebsite verbeterd en marketingstrategieën geadviseerd en toegepast die hielpen nieuwe klanten en medewerkers te werven.</span></p>
+        <ul class="tags"><li>Web design</li><li>Marketing</li></ul>
+      </article>
+
+      <!-- EDIT: replace this card with your first real IT project (e.g. a home lab) and remove the "upcoming" class -->
+      <article class="card project upcoming">
+        <div class="project-top"><span class="mono type"><span lang="en">up next</span><span lang="nl">binnenkort</span></span></div>
+        <h3><span lang="en">Home lab</span><span lang="nl">Thuislab</span></h3>
+        <p><span lang="en">A small lab to practise for Network+ and Security+: subnets, VLANs, a firewall and a VPN. Documented here as I build it.</span>
+          <span lang="nl">Een klein lab om te oefenen voor Network+ en Security+: subnetten, VLAN's, een firewall en een VPN. Ik documenteer het hier terwijl ik het bouw.</span></p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE & EDUCATION ============ -->
+  <section id="experience" class="wrap section">
+    <h2><span class="num">04</span><span lang="en">Experience &amp; education</span><span lang="nl">Werkervaring &amp; opleiding</span></h2>
+    <div class="two-col">
+      <div>
+        <h3 class="sub"><span lang="en">Experience</span><span lang="nl">Werkervaring</span></h3>
+        <ol class="timeline">
+          <li>
+            <span class="mono when">2023 – 2025</span>
+            <h4><span lang="en">Scooter mechanic</span><span lang="nl">Scootermonteur</span> · Scootercare</h4>
+            <p><span lang="en">Returned to Scootercare as a mechanic, combined with a lot of travelling abroad.</span>
+              <span lang="nl">Teruggekeerd bij Scootercare als monteur, gecombineerd met veel reizen.</span></p>
+          </li>
+          <li>
+            <span class="mono when">2022 – 2023</span>
+            <h4><span lang="en">Moving services</span><span lang="nl">Fysiek dienstverlener</span> · De Sjouwers</h4>
+            <p><span lang="en">Brought in many new customers and employees, improved the website and applied marketing and business strategies.</span>
+              <span lang="nl">Veel klanten en werknemers verzameld, de website verbeterd en marketing- en bedrijfsstrategieën geadviseerd en toegepast.</span></p>
+          </li>
+          <li>
+            <span class="mono when">2021 – 2022</span>
+            <h4><span lang="en">Car mechanic</span><span lang="nl">Automonteur</span> · Wickedcars</h4>
+            <p><span lang="en">Moved on from scooters to automotive repair. Learned welding, spray painting, metalwork and wheel repair.</span>
+              <span lang="nl">Doorgegroeid van scooters naar autotechniek. Geleerd: lassen, spuiten, metaalbewerken en velgen herstellen.</span></p>
+          </li>
+          <li>
+            <span class="mono when">2014 – 2021</span>
+            <h4><span lang="en">Scooter mechanic &amp; front desk</span><span lang="nl">Scootermonteur &amp; baliemedewerker</span> · Scootercare</h4>
+            <p><span lang="en">Grew from cleaning to mechanic and front desk. Also maintained the webshop and social media.</span>
+              <span lang="nl">Doorgegroeid van schoonmaker tot monteur en baliemedewerker. Ook webshop en social media bijgehouden.</span></p>
+          </li>
+        </ol>
+      </div>
+      <div>
+        <h3 class="sub"><span lang="en">Education</span><span lang="nl">Opleiding</span></h3>
+        <ol class="timeline">
+          <li class="current">
+            <span class="mono when">2025 – <span lang="en">now</span><span lang="nl">nu</span></span>
+            <h4>Associate Degree Cybersecurity</h4>
+            <p>Hogeschool Utrecht · Amersfoort</p>
+          </li>
+          <li>
+            <span class="mono when">2023</span>
+            <h4>HBO Communicatie &amp; Multimedia Design <span class="muted">(<span lang="en">year 1</span><span lang="nl">jaar 1</span>)</span></h4>
+            <p>Hogeschool Utrecht</p>
+          </li>
+          <li>
+            <span class="mono when">2022</span>
+            <h4>HBO-ICT <span class="muted">(<span lang="en">year 1</span><span lang="nl">jaar 1</span>)</span></h4>
+            <p>Hogeschool Utrecht</p>
+          </li>
+          <li>
+            <span class="mono when">2021</span>
+            <h4>HBO <span lang="en">Business Administration</span><span lang="nl">Bedrijfskunde</span> <span class="muted">(<span lang="en">year 1</span><span lang="nl">jaar 1</span>)</span></h4>
+            <p>Hogeschool Utrecht</p>
+          </li>
+          <li>
+            <span class="mono when">2015 – 2021</span>
+            <h4>VWO</h4>
+            <p>Comenius College</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="wrap section contact">
+    <h2><span class="num">05</span>Contact</h2>
+    <p class="lead"><span lang="en">Interested in working together? I'd love to hear from you.</span>
+      <span lang="nl">Interesse om samen te werken? Ik hoor graag van je.</span></p>
+    <div class="cta">
+      <!-- contact e-mail -->
+      <a class="btn primary" href="mailto:g.a.n.keers@gmail.com">g.a.n.keers@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/nandokeers/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/nandokeers" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap footer mono">© <span id="year"></span> Nando Keers</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  var root = document.documentElement;
+
+  function setLang(l) {
+    root.lang = l;
+    document.title = l === 'nl' ? 'Nando Keers · IT-portfolio' : 'Nando Keers · IT Portfolio';
+    document.querySelectorAll('.lang-switch button').forEach(function (b) {
+      b.setAttribute('aria-pressed', b.dataset.lang === l);
+    });
+    try { localStorage.setItem('lang', l); } catch (e) {}
+  }
+  document.querySelectorAll('.lang-switch button').forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.dataset.lang); });
+  });
+  setLang(root.lang);
+
+  document.getElementById('theme').addEventListener('click', function () {
+    var dark = root.dataset.theme ? root.dataset.theme === 'dark'
+      : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+  });
+</script>
+</body>
+</html>
