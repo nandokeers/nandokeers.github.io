@@ -14,3 +14,8 @@ Plain HTML + CSS. No build step: open `index.html` in a browser to see it.
 4. After ~1 minute the site is live at `https://nandokeers.github.io`.
 
 Netlify or Cloudflare Pages work too (drag and drop the folder).
+
+## CV
+The PDFs in `assets/` (`cv-en.pdf`, `cv-nl.pdf`) are generated from `cv-source/cv.html`.
+Open that file in Chrome, switch `lang="en"` / `lang="nl"` on the `<html>` tag, and use Print → Save as PDF
+(paper A4, margins none, background graphics on).
