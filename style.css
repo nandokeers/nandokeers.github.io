@@ -20,7 +20,9 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; background: var(--bg); color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark; } }
 body {
   margin: 0; background: var(--bg); color: var(--text);
   font: 16px/1.65 Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased;
@@ -164,7 +166,8 @@ html[lang="en"] [lang="nl"], html[lang="nl"] [lang="en"] { display: none !import
 .timeline .muted { font-weight: 400; }
 
 @media (max-width: 760px) {
-  .lang-switch { margin-left: auto; }
+  .nav nav + .lang-switch { margin-left: auto; }
+  .nav-inner { gap: 12px; }
   .icon-btn { margin-left: 0; }
   .photo { width: 120px; order: -1; }
 }
